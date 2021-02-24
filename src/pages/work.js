@@ -13,14 +13,13 @@ import Footer from "../components/Footer";
 import { Element, animateScroll as scroll, scroller } from "react-scroll";
 
 const WorkPage = ({ section }) => {
-
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (section === 'smartface') {
-      scroller.scrollTo('smartface');
-    } else if (section === 'nasapix') {
-      scroller.scrollTo('nasapix');
+    if (section === "smartface") {
+      scroller.scrollTo("smartface");
+    } else if (section === "nasapix") {
+      scroller.scrollTo("nasapix");
     }
     return () => {
       setIsOpen(false);
@@ -41,7 +40,7 @@ const WorkPage = ({ section }) => {
       </Element>
       <Element name="nasapix">
         <InfoSection {...nasaPix} />
-      </Element>      
+      </Element>
       <InfoSection {...paintClone} />
       <InfoSection {...starWars} />
       <Footer />

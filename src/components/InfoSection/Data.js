@@ -15,7 +15,8 @@ export const homeObjOne = {
     alt: 'Russell Hart Picture',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    fade: { right: false, left: true }
 };
 
 export const ezShop = {
@@ -37,7 +38,8 @@ export const ezShop = {
     alt: 'ezshop picture',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    fade: { right: true, left: false }
 };
 
 export const smartFace = {
@@ -59,7 +61,8 @@ export const smartFace = {
     alt: 'smartface picture',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    fade: { right: false, left: true }
 };
 
 export const nasaPix = {
@@ -80,7 +83,8 @@ export const nasaPix = {
     alt: 'ezshop picture',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    fade: { right: true, left: false }
 };
 
 export const paintClone = {
@@ -101,7 +105,8 @@ export const paintClone = {
     alt: 'paint picture',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    fade: { right: false, left: true }
 };
 
 export const starWars = {
@@ -122,5 +127,6 @@ export const starWars = {
     alt: 'ezshop picture',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    fade: { right: true, left: false }
 };

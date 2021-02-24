@@ -1,24 +1,25 @@
-import React, {useState} from "react";
-import Video from '../../videos/video.mp4';
-import { Button } from '../ButtonElement';
-import { 
-    HeroContainer, 
-    HeroBg, 
-    VideoBg,
-    HeroContent,
-    HeroH1,
-    HeroP,
-    HeroBtnWrapper,
-    ArrowForward,
-    ArrowRight 
-} from './HeroElements';
+import React, { useState } from "react";
+import Fade from "react-reveal/Fade";
+import Video from "../../videos/video.mp4";
+import { Button } from "../ButtonElement";
+import {
+  HeroContainer,
+  HeroBg,
+  VideoBg,
+  HeroContent,
+  HeroH1,
+  HeroP,
+  HeroBtnWrapper,
+  ArrowForward,
+  ArrowRight,
+} from "./HeroElements";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
 
-  const onHover =() => {
-      setHover(!hover);
-  }
+  const onHover = () => {
+    setHover(!hover);
+  };
 
   return (
     <HeroContainer id="home">
@@ -26,19 +27,25 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Russell Hart</HeroH1>
-        <HeroP>Web Developer / Designer</HeroP>
-        <HeroBtnWrapper>
-            <Button 
-            to="/contact" 
-            onMouseEnter={onHover} 
-            onMouseLeave={onHover} 
-            primary="true" 
-            dark="true"
+        <Fade left>
+          <HeroH1>Russell Hart</HeroH1>
+        </Fade>
+        <Fade right>
+          <HeroP>Web Developer / Designer</HeroP>
+        </Fade>
+        <Fade up>
+          <HeroBtnWrapper>
+            <Button
+              to="/contact"
+              onMouseEnter={onHover}
+              onMouseLeave={onHover}
+              primary="true"
+              dark="true"
             >
-                Available for work {hover ? <ArrowForward /> : <ArrowRight />}
+              Available for work {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
-        </HeroBtnWrapper>
+          </HeroBtnWrapper>
+        </Fade>
       </HeroContent>
     </HeroContainer>
   );

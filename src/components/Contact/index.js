@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 import {
   Container,
   FormWrap,
@@ -17,6 +18,7 @@ const Contact = () => {
   return (
     <>
       <Container>
+      <Fade down>
         <FormWrap>
           <FormContent>
             <Form>
@@ -51,6 +53,7 @@ const Contact = () => {
             </Form>
           </FormContent>
         </FormWrap>
+        </Fade>
       </Container>
     </>
   );

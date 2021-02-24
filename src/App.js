@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, useLocation } from "react-router-dom";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages";
 import WorkPage from "./pages/work";
 import ContactPage from "./pages/contact";
